@@ -1,7 +1,12 @@
 const Hero = () => {
     return (
-        <div>
-            
+        <div className="flex justify-between">
+            <div>
+                Konten kiri
+            </div>
+            <div>
+                Konten Kanan
+            </div>
         </div>
     )
 }
