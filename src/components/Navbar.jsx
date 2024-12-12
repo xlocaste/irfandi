@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,16 +8,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white">
+    <nav className={`transition-all duration-300 ${isOpen ? 'bg-gray-800' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
-        <img src="/assets/logo.png" alt="" className="w-12 h-12"/>
+        <img src="/assets/logo.png" alt="Logo" className="w-12 h-12" />
 
         <button
           onClick={toggleMenu}
-          className="lg:hidden block text-white focus:outline-none"
+          className="lg:hidden block focus:outline-none"
         >
           <svg
-            className="w-6 h-6"
+            className={`w-6 h-6 ${isOpen ? 'text-white' : 'text-gray-800'}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -31,30 +31,51 @@ const Navbar = () => {
             />
           </svg>
         </button>
+        <ul className='hidden lg:flex'>
+          <li>
+            <a href="#home" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a href="#services" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+              SERVICES
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <ul
-          className={`${
-            isOpen ? "block" : "hidden"
-          } lg:flex lg:space-x-8 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-800 lg:bg-transparent lg:items-center`}
-        >
+      {/* HAMB */}
+      <div className={`transition-all duration-300 w-full ${isOpen ? 'absolute translate-x-0 bg-gray-800' : 'absolute -translate-x-full'}`}>
+        <ul className='lg:hidden text-center pb-4'>
           <li>
-            <a href="#home" className="block py-2 px-4 hover:bg-gray-700">
-              Home
+            <a href="#home" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+              HOME
             </a>
           </li>
           <li>
-            <a href="#about" className="block py-2 px-4 hover:bg-gray-700">
-              About
+            <a href="#about" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+              ABOUT
             </a>
           </li>
           <li>
-            <a href="#services" className="block py-2 px-4 hover:bg-gray-700">
-              Services
+            <a href="#services" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+              SERVICES
             </a>
           </li>
           <li>
-            <a href="#contact" className="block py-2 px-4 hover:bg-gray-700">
-              Contact
+            <a href="#contact" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+              CONTACT
             </a>
           </li>
         </ul>
