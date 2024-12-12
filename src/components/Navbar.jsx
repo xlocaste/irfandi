@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
-        <img src="./public/assets/logo.png" alt="" className="w-12 h-12"/>
+        <img src="/assets/logo.png" alt="" className="w-12 h-12"/>
 
         <button
           onClick={toggleMenu}
