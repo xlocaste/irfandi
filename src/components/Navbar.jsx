@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`absolute w-full z-10 transition-all duration-300 ${isOpen ? 'bg-gray-800' : 'bg-transparent'}`}>
+    <nav className={`absolute w-full z-20 transition-all duration-300 ${isOpen ? 'bg-gray-800' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         <button>
           <a href="./components/navbar">
