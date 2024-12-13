@@ -7,14 +7,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Pixelify Sans', 'sans-serif'],
       },
       colors: {
-        primary: '#2C3639',
-        secondary: '#3F4E4F',
-        accent: '#A27B5C',
-        neutral: '#DCD7C9',
-      }
+        primary: "#070F2B", 
+        secondary: "#1B1A55",
+        accent: "#535C91",
+        neutral: "#9290C3",
+        highlight: "#FACC15",
+      },
     },
   },
   plugins: [],
