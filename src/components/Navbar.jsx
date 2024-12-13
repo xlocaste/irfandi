@@ -8,16 +8,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`transition-all duration-300 ${isOpen ? 'bg-gray-800' : 'bg-transparent'}`}>
+    <nav className={`absolute w-full z-10 transition-all duration-300 ${isOpen ? 'bg-gray-800' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
-        <img src="/assets/logo.png" alt="Logo" className="w-12 h-12" />
+        <button>
+          <a href="./components/navbar">
+          <img src="/assets/logo.png" alt="Logo" className="w-12 h-12" />
+          </a>
+        </button>
 
         <button
           onClick={toggleMenu}
           className="lg:hidden block focus:outline-none"
         >
           <svg
-            className={`w-6 h-6 ${isOpen ? 'text-white' : 'text-gray-800'}`}
+            className={`w-6 h-6 ${isOpen ? 'text-white' : 'text-white'}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -33,22 +37,22 @@ const Navbar = () => {
         </button>
         <ul className='hidden lg:flex'>
           <li>
-            <a href="#home" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+            <a href="#home" className="py-2 px-4 text-white hover:underline">
               HOME
             </a>
           </li>
           <li>
-            <a href="#about" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+            <a href="#about" className="py-2 px-4 text-white hover:underline">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#services" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+            <a href="#services" className="py-2 px-4 text-white hover:underline">
               SERVICES
             </a>
           </li>
           <li>
-            <a href="#contact" className="py-2 px-4 text-white lg:text-gray-800 hover:text-gray-300 hover:bg-gray-700">
+            <a href="#contact" className="py-2 px-4 text-white hover:underline">
               CONTACT
             </a>
           </li>
