@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 const App = () => {
     const vantaRef = useRef(null);
@@ -34,6 +35,7 @@ const App = () => {
 
         <div className="absolute inset-0 z-10">
             <Hero />
+            <About />
         </div>
     </div>
     );
