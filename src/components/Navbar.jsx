@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`absolute w-full z-20 transition-all duration-300 ${isOpen ? 'bg-gray-800' : 'bg-transparent'}`}>
+    <nav className={`absolute w-full z-20 transition-all duration-300 ${isOpen ? 'bg-primary' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         <button>
           <a href="./components/navbar">
@@ -21,7 +21,7 @@ const Navbar = () => {
           className="lg:hidden block focus:outline-none"
         >
           <svg
-            className={`w-6 h-6 ${isOpen ? 'text-white' : 'text-white'}`}
+            className={`w-6 h-6 ${isOpen ? 'text-neutral' : 'text-neutral'}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -37,22 +37,22 @@ const Navbar = () => {
         </button>
         <ul className='hidden lg:flex'>
           <li>
-            <a href="#home" className="py-2 px-4 text-white hover:underline">
+            <a href="#home" className="py-2 px-4 text-neutral hover:underline">
               HOME
             </a>
           </li>
           <li>
-            <a href="#about" className="py-2 px-4 text-white hover:underline">
+            <a href="#about" className="py-2 px-4 text-neutral hover:underline">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#services" className="py-2 px-4 text-white hover:underline">
+            <a href="#services" className="py-2 px-4 text-neutral hover:underline">
               SERVICES
             </a>
           </li>
           <li>
-            <a href="#contact" className="py-2 px-4 text-white hover:underline">
+            <a href="#contact" className="py-2 px-4 text-neutral hover:underline">
               CONTACT
             </a>
           </li>
@@ -60,25 +60,25 @@ const Navbar = () => {
       </div>
 
       {/* HAMB */}
-      <div className={`transition-all duration-300 w-full ${isOpen ? 'absolute translate-x-0 bg-gray-800' : 'absolute -translate-x-full'}`}>
+      <div className={`transition-all duration-300 w-full ${isOpen ? 'absolute translate-x-0 bg-primary' : 'absolute -translate-x-full'}`}>
         <ul className='lg:hidden text-center pb-4'>
           <li>
-            <a href="#home" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+            <a href="#home" className="block py-2 px-4 text-neutral font-semibold hover:text-accent hover:bg-secondary">
               HOME
             </a>
           </li>
           <li>
-            <a href="#about" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+            <a href="#about" className="block py-2 px-4 text-neutral font-semibold hover:text-accent hover:bg-secondary">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#services" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+            <a href="#services" className="block py-2 px-4 text-neutral font-semibold hover:text-accent hover:bg-secondary">
               SERVICES
             </a>
           </li>
           <li>
-            <a href="#contact" className="block py-2 px-4 text-white font-semibold hover:text-gray-300 hover:bg-gray-700">
+            <a href="#contact" className="block py-2 px-4 text-neutral font-semibold hover:text-accent hover:bg-secondary">
               CONTACT
             </a>
           </li>

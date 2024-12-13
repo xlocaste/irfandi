@@ -5,7 +5,7 @@ import Whatsapp from "./icons/Whatsapp";
 
 const Footer = () => {
     return (
-      <footer className="bg-gray-800 text-white p-10 md:p-20 pb-0 md:pb-0">
+      <footer className="bg-primary text-neutral p-10 md:p-20 pb-0 md:pb-0">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/3">
             <p className="font-semibold text-xl mb-2">ABOUT</p>
