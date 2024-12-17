@@ -4,7 +4,7 @@ const Github = () => {
     return (
         <button>
             <a href="https://github.com/xlocaste">
-            <FaGithub />
+            <FaGithub size={32}/>
             </a>
         </button>
     )

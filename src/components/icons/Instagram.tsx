@@ -5,7 +5,7 @@ const Instagram = () => {
     return (
         <button>
             <a href="https://www.instagram.com/xlocaste/">
-            <RiInstagramFill />
+            <RiInstagramFill size={32}/>
             </a>
         </button>
     )

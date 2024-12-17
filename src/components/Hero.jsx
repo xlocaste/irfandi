@@ -1,4 +1,8 @@
 import Button from "./ButtonStart";
+import Email from "./icons/Email";
+import Facebook from "./icons/Facebook";
+import Github from "./icons/Github";
+import Instagram from "./icons/Instagram";
 
 const Hero = () => {
     return (
@@ -11,6 +15,12 @@ const Hero = () => {
                     I’m a passionate Programmer focused on creating innovative solutions and building the future of technology.
                 </p>
                 <Button />
+                <div className="mt-10 flex justify-center gap-4">
+                    <Email />
+                    <Github />
+                    <Facebook />
+                    <Instagram />
+                </div>
             </div>
         </div>
     );

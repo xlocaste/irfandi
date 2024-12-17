@@ -3,7 +3,7 @@ import { IoMdMail } from "react-icons/io";
 const Email = () => {
     return(
         <button>
-            <IoMdMail />
+            <IoMdMail size={32}/>
         </button>
     )
 }
